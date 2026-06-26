@@ -23,15 +23,11 @@ WHERE {
 
   ?wp ell_schema:consistsOfStemOfAWordPattern ?stemPattern ;
       ell_schema:consistsOfInfSuf ?affix .
-
   ?stemPattern ell_schema:isMappedTo ?stem ;
                ell_schema:consistsOfDerSuf ?derAff .
-
   ?derivationRule ell_schema:involves ?derAff .
-
   ?stem mmoon:orthographicRepresentation ?stemForm ;
         ell_schema:hasBase ?base .
-
   ?affix mmoon:orthographicRepresentation ?affixForm .
 
   BIND(
